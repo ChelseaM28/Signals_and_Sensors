@@ -1,5 +1,7 @@
 from skyfield.api import load
-print("hi")
+#See source here https://rhodesmill.org/skyfield/
+
+#Calculate position of mars in the sky
 # Create a timescale and ask the current time.
 ts = load.timescale()
 t = ts.now()
@@ -15,3 +17,4 @@ ra, dec, distance = astrometric.radec()
 print(ra)
 print(dec)
 print(distance)
+
